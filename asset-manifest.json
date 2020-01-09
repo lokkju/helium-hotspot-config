@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/helium-hotspot-config/static/css/main.8657f287.chunk.css",
-    "main.js": "/helium-hotspot-config/static/js/main.810e8604.chunk.js",
-    "main.js.map": "/helium-hotspot-config/static/js/main.810e8604.chunk.js.map",
+    "main.js": "/helium-hotspot-config/static/js/main.d1e9862f.chunk.js",
+    "main.js.map": "/helium-hotspot-config/static/js/main.d1e9862f.chunk.js.map",
     "runtime-main.js": "/helium-hotspot-config/static/js/runtime-main.08fd18f6.js",
     "runtime-main.js.map": "/helium-hotspot-config/static/js/runtime-main.08fd18f6.js.map",
     "static/js/2.5b4db9e1.chunk.js": "/helium-hotspot-config/static/js/2.5b4db9e1.chunk.js",
     "static/js/2.5b4db9e1.chunk.js.map": "/helium-hotspot-config/static/js/2.5b4db9e1.chunk.js.map",
     "index.html": "/helium-hotspot-config/index.html",
-    "precache-manifest.9f810332a161bbf83f9ec5d7b2ce9073.js": "/helium-hotspot-config/precache-manifest.9f810332a161bbf83f9ec5d7b2ce9073.js",
+    "precache-manifest.f07c8c40241479b15e7295db1bf39220.js": "/helium-hotspot-config/precache-manifest.f07c8c40241479b15e7295db1bf39220.js",
     "service-worker.js": "/helium-hotspot-config/service-worker.js",
     "static/css/main.8657f287.chunk.css.map": "/helium-hotspot-config/static/css/main.8657f287.chunk.css.map",
     "static/js/2.5b4db9e1.chunk.js.LICENSE": "/helium-hotspot-config/static/js/2.5b4db9e1.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.08fd18f6.js",
     "static/js/2.5b4db9e1.chunk.js",
     "static/css/main.8657f287.chunk.css",
-    "static/js/main.810e8604.chunk.js"
+    "static/js/main.d1e9862f.chunk.js"
   ]
 }
