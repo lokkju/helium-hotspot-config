@@ -82,8 +82,9 @@ function HotspotConfigurator({setStatus}) {
             const info = {};
             setStatus('Selecting device...');
             console.log("Connecting to device...");
-            const device = await navigator.bluetooth.requestDevice({filters: [{services: ["device_information", UUID_GATEWAY_GATT_SERVICE]}]});
+            const device = await navigator.bluetooth.requestDevice({filters: [{namePrefix: "Helium Hotspot ", optionalServices: ["device_information", UUID_GATEWAY_GATT_SERVICE]}]});
             console.log(device);
+            setDevice(device);
 
             setStatus('Connecting to GATT Server...');
             console.log('Connecting to GATT Server...');
@@ -106,13 +107,12 @@ function HotspotConfigurator({setStatus}) {
             console.log(info);
 
             setDeviceInfo(info);
-            setDevice(device);
             setStatus(null);
         }
         catch (error) {
             console.log(error.message);
             alert(error.message);
-            setStatus(null);
+            reset();
         }
     };
     const reset = () => {
@@ -125,7 +125,7 @@ function HotspotConfigurator({setStatus}) {
     };
 
     const infoListItems = (info, charArray) => {
-        if (device == null) return;
+        if (device == null || deviceInfo == null) return;
         return charArray.map((value, index) => {
             let val = info[value.key];
             let lit = "";
