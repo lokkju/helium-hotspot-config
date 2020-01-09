@@ -82,7 +82,7 @@ function HotspotConfigurator({setStatus}) {
             const info = {};
             setStatus('Selecting device...');
             console.log("Connecting to device...");
-            const device = await navigator.bluetooth.requestDevice({filters: [{namePrefix: "Helium Hotspot ", optionalServices: ["device_information", UUID_GATEWAY_GATT_SERVICE]}]});
+            const device = await navigator.bluetooth.requestDevice({filters: [{namePrefix: "Helium Hotspot "}], optionalServices: ["device_information", UUID_GATEWAY_GATT_SERVICE]});
             console.log(device);
             setDevice(device);
 
